@@ -4,36 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-
-    
+    <link rel="stylesheet"  href="mobile.css">
     <script src="https://kit.fontawesome.com/0c94bff300.js" crossorigin="anonymous"></script>
     <title>Eddyenin's Portfolio</title>
 </head>
 <body>
-    <!-- Home Page -->
-    <section class="home-page">
-        <nav class="navbar">
+     <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container-fluid">
             <div class="logo">
-                <a href="#"><i>E</i>ddyenin</a>
+                <a href="#">
+                    <i>E</i>ddyenin
+                </a>
             </div>
-            <div class="nav-links">
-                <a href="index.html" id="home" class="btn nav-link-item link-i"><i class="fa-solid fa-house link-i"></i>Home</a>
-                <a href="about.html" id="about" class="btn nav-link-item link-i"><i class="fa-solid fa-user link-i"></i>About</a>
-                <a href="resume.html" id="resume" class="btn nav-link-item link-i"><i class="fa-solid fa-file link-i"></i>Resume</a>
-                <a href="work.html" id="work" class="btn nav-link-item link-i"><i class="fa-solid fa-list-check link-i"></i>Works</a>
-                <!-- <a href="blog.html" id="blog" class="btn nav-link-item link-i"><i class="fa-brands fa-blogger link-i"></i>Blog</a> -->
-                <a href="contact.html" id="contact" class="btn nav-link-item link-i"><i class="fa-solid fa-address-book link-i"></i>Contact</a>
-                <!-- <i class="fa-solid fa-cloud-moon"></i> -->
-                <!-- <i class="fa-solid fa-sun" id="theme"></i> -->
-            </div>
-        </nav>
-        </nav>
-    </section>
 
-    <section class="about">
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html" id="home" class="btn nav-link-item link-i"><i class="fa-solid fa-house link-i"></i>Home</a></li>
+                    <li><a href="about.html" id="about" class="btn nav-link-item link-i"><i class="fa-solid fa-user link-i"></i>About</a></li>
+                    <li><a href="resume.html" id="resume" class="btn nav-link-item link-i"><i class="fa-solid fa-file link-i"></i>Resume</a></li>
+                    <li> <a href="work.html" id="work" class="btn nav-link-item link-i"><i class="fa-solid fa-list-check link-i"></i>Works</a></li>
+                    <li> <a href="contact.html" id="contact" class="btn nav-link-item link-i"><i class="fa-solid fa-address-book link-i"></i>Contact</a></li>
+                    <!-- <a href="blog.html" id="blog" class="btn nav-link-item link-i"><i class="fa-brands fa-blogger link-i"></i>Blog</a> -->
+                </ul>
+            </div>
+
+            <!-- Hamburger -->
+            <button class="hamburger-button">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </button>
+
+            <div class="mobile-menu">
+                <ul>
+                    <li><a href="index.html" id="home" class="btn nav-link-item link-i"><i class="fa-solid fa-house link-i"></i>Home</a></li>
+                    <li><a href="about.html" id="about" class="btn nav-link-item link-i"><i class="fa-solid fa-user link-i"></i>About</a></li>
+                    <li><a href="resume.html" id="resume" class="btn nav-link-item link-i"><i class="fa-solid fa-file link-i"></i>Resume</a></li>
+                    <li> <a href="work.html" id="work" class="btn nav-link-item link-i"><i class="fa-solid fa-list-check link-i"></i>Works</a></li>
+                    <li> <a href="contact.html" id="contact" class="btn nav-link-item link-i"><i class="fa-solid fa-address-book link-i"></i>Contact</a></li>
+                    <!-- <a href="blog.html" id="blog" class="btn nav-link-item link-i"><i class="fa-brands fa-blogger link-i"></i>Blog</a> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="resume">
         <div class="container">
             <div class="container-wrap">
-                <div class="title">
+                <div class="profile-title">
                     <h1>Resume</h1>
                     <!-- <hr> -->
                 </div>
@@ -93,12 +111,9 @@
                         </div>
                     </div>
                 </div>
-                
-            </div>
-            
+                <hr>
 
-            <div class="footer">
-                <h3 class="work-skill">Working skills</h3>
+                <h2 class="profile-title">Skills</h2>
                 <div class="working-skill">
                     <span class="bsc small">HTML</span>
                     <span class="bsc small">CSS</span>
@@ -109,6 +124,12 @@
                     <span class="bsc small">CODEIGNITER</span>
                     <span class="bsc small">MYSQL</span>
                 </div>
+                
+            </div>
+            
+
+            <div class="footer">
+               
                 <div class="copyright">
                     &copy;2023. All Rights Reserved.
                 </div>

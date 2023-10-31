@@ -4,8 +4,6 @@ const container = document.querySelector('.container')
 const body = document.querySelector('.body');
 const navLinks = document.querySelectorAll('.nav-link-item');
 
-console.log(darkmode)
-
 function enableDarkMode(){
     //Add darkmode class to the body
     document.body.classList.add('darkmode')
@@ -47,12 +45,24 @@ function disableDarkMode(){
     localStorage.setItem('darkMode', null);
 }
 
-theme.addEventListener('click',() => {
-    darkmode = localStorage.getItem('darkMode');
-    if(darkmode !== "enabled"){
-        enableDarkMode()
-    }else{
-        disableDarkMode()
-        //console.log('dark')
-    }
-});
+// theme.addEventListener('click',() => {
+//     darkmode = localStorage.getItem('darkMode');
+//     if(darkmode !== "enabled"){
+//         enableDarkMode()
+//     }else{
+//         disableDarkMode()
+//         //console.log('dark')
+//     }
+// });
+
+
+// Mobile Menu
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburgerButton = document.querySelector('.hamburger-button');
+    const mobileMenu = document.querySelector('.mobile-menu');
+  
+    hamburgerButton.addEventListener('click', () =>
+      mobileMenu.classList.toggle('active')
+    );
+  });
+  
